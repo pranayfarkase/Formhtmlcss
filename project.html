@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISKON registration form</title>
+    <style>
+        .container {
+            padding: 0px 25px;
+            color: #dfdce3;
+        }
+
+        hr {
+            border: solid #374785 1px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #24305e;
+        }
+
+        label {
+            color: #24305e;
+            font-weight: bold;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=password],
+        select,
+        input[type=file] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0px 22px 0px;
+            display: inline-block;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .resisterbtn {
+            background-color: #fc4a1a;
+            color: whitesmoke;
+            padding: 15px 22px;
+            margin: 8px 0px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 17px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(#3a0ca3, #4361ee);
+        }
+
+        .resisterbtn:hover {
+            box-shadow: none;
+            translate: 0px 5px;
+            background: linear-gradient(#41c01a, #69e974);
+            color: #272423;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #f7b733;
+            outline: none;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8e9a1;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #f76c6c;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #heading {
+            width: 100vw;
+            background-color: white;
+            display: grid;
+            place-items: center;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 15px;
+        }
+
+        select {
+            padding: 10px;
+            border: 5px;
+        }
+
+        img {
+            background: white;
+            width: 90px;
+        }
+
+        input[type=file]::-webkit-file-upload-button {
+            padding: 10px;
+            border-radius: 8px;
+            background: white;
+            border: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="heading">
+        <img src="iskcon (1).svg" alt="iskcon">
+    </header>
+    <form action="thnk.html">
+        <div class="container">
+            <h2>Devotee Register</h2>
+            <hr>
+            <label for="psw">Full Name :</label>
+            <input type="text" placeholder="Enter Full Name" id="psw" name="name" required>
+            <label for="email">Email :</label>
+            <input type="text" placeholder="Enter the Email" name="email" id="psw" required>
+            <label for="psw">Mobile Number :</label>
+            <input type="text" placeholder="Enter the Mobile Number" required>
+            <label for="address">Address :</label>
+            <input type="text" placeholder="Enter Address" name="addr" required>
+            <label>Date of birth :</label>
+            <input type="Date" required>
+            <label for="Background">Spiritual Background :</label>
+            <input type="text" placeholder="Enter Your Spiritual Background" required>
+            <label>Skill :</label>
+            <select required>
+                <option value="singing">Singing</option>
+                <option value="cooking">Cooking</option>
+                <option value="Teaching">Teching</option>
+                <option value="Music">Music</option>
+                <option value="Kirtan">Kirtan</option>
+            </select>
+            <label for="occupation">Occupation :</label>
+            <input type="text" placeholder="Enter Your Occupation" required>
+            <label for="intention">Intention to joining ISKON :</label>
+            <input type="text" placeholder="Enter Your Goal" name="addr" required>
+            <label for="sign">Signature :</label>
+            <input type="file" required>
+            <hr>
+            <button type="submit" class="resisterbtn">Join ISKON</button>
+        </div>
+    </form>
+</body>
+
+</html>
